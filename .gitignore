@@ -1,0 +1,13 @@
+# Backend
+backend/backend/target/
+backend/backend/.mvn/
+*.class
+*.jar
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# VS Code
+.vscode/
