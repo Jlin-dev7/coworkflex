@@ -61,7 +61,7 @@ function Dashboard() {
             CoWork Flex
           </h1>
 
-          <p style={{ color: "#6f6f6f", fontSize: "20px", marginTop: "10px" }}>
+          <p style={{ color: "#3C3C3C", fontSize: "20px", marginTop: "10px" }}>
             Trouvez et réservez votre espace de travail idéal.
           </p>
 
