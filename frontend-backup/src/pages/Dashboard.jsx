@@ -30,13 +30,13 @@ function Dashboard() {
   }, []);
 
   return (
-    <div style={{ background: "#fcfcfd", minHeight: "100vh" }}>
+    <div style={{ background: "#F5F1ED", minHeight: "100vh" }}>
       <div style={{
         maxWidth: "1200px",
         margin: "0 auto",
-        background: "#fff",
-        borderLeft: "1px solid #ebebef",
-        borderRight: "1px solid #ebebef",
+        background: "#FAFAF8",
+        borderLeft: "1px solid #E8DCC8",
+        borderRight: "1px solid #E8DCC8",
         minHeight: "100vh",
       }}>
 
@@ -57,11 +57,11 @@ function Dashboard() {
           position: "relative",
         }}>
 
-          <h1 style={{ fontSize: "5rem", margin: 0, marginBottom: "25px", fontWeight: 700, color: "#fff", textShadow: "2px 2px 4px rgba(0,0,0,0.5)" }}>
+          <h1 style={{ fontSize: "5rem", margin: 0, marginBottom: "25px", fontWeight: 700, color: "#2C2C2C", textShadow: "1px 1px 3px rgba(255,255,255,0.3)" }}>
             CoWork Flex
           </h1>
 
-          <p style={{ color: "#ffffff", fontSize: "20px", marginTop: "10px" }}>
+          <p style={{ color: "#3C3C3C", fontSize: "20px", marginTop: "10px" }}>
             Trouvez et réservez votre espace de travail idéal.
           </p>
 
@@ -77,19 +77,19 @@ function Dashboard() {
         </div>
 
         {/* LIGNE SÉPARATRICE */}
-        <div style={{ height: "1px", background: "#ebebef", width: "100%" }} />
+        <div style={{ height: "1px", background: "#E8DCC8", width: "100%" }} />
 
         {/* DEUX CARTES STYLE VITE */}
         <div style={{
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
-          borderBottom: "1px solid #ebebef",
+          borderBottom: "1px solid #E8DCC8",
         }}>
           {/* Carte 1 — Espaces */}
-          <div style={{ padding: "27px", borderRight: "1px solid #ebebef" }}>
+          <div style={{ padding: "27px", borderRight: "1px solid #E8DCC8" }}>
             <div style={{
               width: 50, height: 50,
-              background: "#F4F0FF",
+              background: "#F0E6D8",
               borderRadius: 12,
               display: "flex",
               alignItems: "center",
@@ -108,12 +108,13 @@ function Dashboard() {
                 onClick={() => window.scrollTo({ top: 800, behavior: "smooth" })}
                 style={{
                   padding: "10px 18px",
-                  border: "1px solid #ddd",
+                  border: "1px solid #D4C4B0",
                   borderRadius: "12px",
-                  background: "#fafafa",
+                  background: "#E8DCC8",
                   cursor: "pointer",
                   fontWeight: 500,
-                  fontSize: "0.9rem"
+                  fontSize: "0.9rem",
+                  color: "#5A4A3A"
                 }}
               >
                 Explorer
@@ -125,7 +126,7 @@ function Dashboard() {
           <div style={{ padding: "27px" }}>
             <div style={{
               width: 50, height: 50,
-              background: "#F0F7FF",
+              background: "#E8D7C3",
               borderRadius: 12,
               display: "flex",
               alignItems: "center",
@@ -144,12 +145,13 @@ function Dashboard() {
                 onClick={() => navigate("/profile")}
                 style={{
                   padding: "10px 18px",
-                  border: "1px solid #ddd",
+                  border: "1px solid #D4C4B0",
                   borderRadius: "12px",
-                  background: "#fafafa",
+                  background: "#E8DCC8",
                   cursor: "pointer",
                   fontWeight: 500,
-                  fontSize: "0.9rem"
+                  fontSize: "0.9rem",
+                  color: "#5A4A3A"
                 }}
               >
                 Mes réservations
@@ -159,7 +161,7 @@ function Dashboard() {
         </div>
 
         {/* LIGNE SÉPARATRICE */}
-        <div style={{ height: "1px", background: "#ebebef", width: "100%" }} />
+        <div style={{ height: "1px", background: "#E8DCC8", width: "100%" }} />
 
         {/* GRILLE DES ESPACES */}
         <div style={{ padding: "40px 30px" }}>
