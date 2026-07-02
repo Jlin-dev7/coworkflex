@@ -4,7 +4,7 @@ import SpaceCard from "../components/SpaceCard";
 import SearchBar from "../components/SearchBar";
 import Loader from "../components/Loader";
 import { useNavigate } from "react-router-dom";
-import bgImage from "../assets/téléchargement.jpg";
+import bgImage from "/src/assets/téléchargement.jpg";
 
 function Dashboard() {
   const [spaces, setSpaces] = useState([]);
