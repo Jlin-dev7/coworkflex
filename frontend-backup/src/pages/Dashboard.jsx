@@ -50,7 +50,7 @@ function Dashboard() {
           minHeight: "60vh",
           gap: "15px",
           padding: "40px 30px",
-          backgroundImage: "url(${bgImage})",
+          backgroundImage: `url(${bgImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           borderRadius: "0",
