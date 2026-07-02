@@ -28,34 +28,34 @@ function Profile() {
   }, []);
 
   return (
-    <div style={{ background: "#fcfcfd", minHeight: "100vh" }}>
+    <div style={{ background: "#F5F1ED", minHeight: "100vh" }}>
       <div style={{
         maxWidth: "1200px",
         margin: "0 auto",
-        background: "#fff",
-        borderLeft: "1px solid #ebebef",
-        borderRight: "1px solid #ebebef",
+        background: "#FAFAF8",
+        borderLeft: "1px solid #E8DCC8",
+        borderRight: "1px solid #E8DCC8",
         minHeight: "100vh",
       }}>
 
         {/* HEADER */}
         <div style={{
           padding: "20px 30px",
-          borderBottom: "1px solid #ebebef",
+          borderBottom: "1px solid #E8DCC8",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center"
         }}>
-          <h1 style={{ margin: 0, fontSize: "1.5rem", color: "#646cff" }}>CoWork-Flex</h1>
+          <h1 style={{ margin: 0, fontSize: "1.5rem", color: "#8B7355" }}>CoWork-Flex</h1>
           <button
             onClick={() => navigate("/")}
             style={{
               background: "transparent",
-              border: "1px solid #ebebef",
+              border: "1px solid #E8DCC8",
               borderRadius: "8px",
               padding: "8px 16px",
               cursor: "pointer",
-              color: "#646cff",
+              color: "#8B7355",
               fontWeight: 500
             }}
           >
@@ -66,14 +66,14 @@ function Profile() {
         {/* PROFIL */}
         <div style={{
           padding: "40px 30px",
-          borderBottom: "1px solid #ebebef",
+          borderBottom: "1px solid #E8DCC8",
           display: "flex",
           alignItems: "center",
           gap: "20px"
         }}>
           <div style={{
             width: 60, height: 60,
-            background: "linear-gradient(135deg, #646cff, #a855f7)",
+            background: "linear-gradient(135deg, #C9A877, #8B7355)",
             borderRadius: "50%",
             display: "flex",
             alignItems: "center",
@@ -94,12 +94,12 @@ function Profile() {
         <div style={{
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
-          borderBottom: "1px solid #ebebef",
+          borderBottom: "1px solid #E8DCC8",
         }}>
-          <div style={{ padding: "40px", borderRight: "1px solid #ebebef" }}>
+          <div style={{ padding: "40px", borderRight: "1px solid #E8DCC8" }}>
             <div style={{
               width: 50, height: 50,
-              background: "#F4F0FF",
+              background: "#F0E6D8",
               borderRadius: 12,
               display: "flex",
               alignItems: "center",
@@ -118,12 +118,13 @@ function Profile() {
                 onClick={() => navigate("/")}
                 style={{
                   padding: "10px 18px",
-                  border: "1px solid #ddd",
+                  border: "1px solid #D4C4B0",
                   borderRadius: "12px",
-                  background: "#fafafa",
+                  background: "#E8DCC8",
                   cursor: "pointer",
                   fontWeight: 500,
-                  fontSize: "0.9rem"
+                  fontSize: "0.9rem",
+                  color: "#5A4A3A"
                 }}
               >
                 Nouvel espace
@@ -134,7 +135,7 @@ function Profile() {
           <div style={{ padding: "40px" }}>
             <div style={{
               width: 50, height: 50,
-              background: "#F0FFF4",
+              background: "#E8D7C3",
               borderRadius: 12,
               display: "flex",
               alignItems: "center",
@@ -162,7 +163,7 @@ function Profile() {
         </div>
 
         {/* LIGNE SÉPARATRICE */}
-        <div style={{ height: "1px", background: "#ebebef", width: "100%" }} />
+        <div style={{ height: "1px", background: "#E8DCC8", width: "100%" }} />
 
         {/* TABLEAU */}
         <div style={{ padding: "30px" }}>
