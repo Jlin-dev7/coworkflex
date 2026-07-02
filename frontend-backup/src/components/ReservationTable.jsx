@@ -20,43 +20,61 @@ function ReservationTable({ reservations, onCancelled }) {
   }
 
   return (
-    <div className="overflow-x-auto">
-      <table className="w-full text-sm text-left">
-        <thead className="bg-gray-100 text-gray-600 uppercase text-xs">
+    <div style={{ overflowX: "auto" }}>
+      <table style={{ width: "100%", fontSize: "0.875rem", textAlign: "left" }}>
+        <thead style={{ background: "#F0E6D8", color: "#8B7355", textTransform: "uppercase", fontSize: "0.75rem", fontWeight: 600 }}>
           <tr>
-            <th className="px-4 py-3 rounded-tl-lg">Espace</th>
-            <th className="px-4 py-3">Poste</th>
-            <th className="px-4 py-3">Début</th>
-            <th className="px-4 py-3">Fin</th>
-            <th className="px-4 py-3">Statut</th>
-            <th className="px-4 py-3 rounded-tr-lg">Action</th>
+            <th style={{ padding: "0.75rem 1rem", borderTopLeftRadius: "8px" }}>Espace</th>
+            <th style={{ padding: "0.75rem 1rem" }}>Poste</th>
+            <th style={{ padding: "0.75rem 1rem" }}>Début</th>
+            <th style={{ padding: "0.75rem 1rem" }}>Fin</th>
+            <th style={{ padding: "0.75rem 1rem" }}>Statut</th>
+            <th style={{ padding: "0.75rem 1rem", borderTopRightRadius: "8px" }}>Action</th>
           </tr>
         </thead>
         <tbody>
           {reservations.map((r) => (
-            <tr key={r.id} className="border-b border-gray-100 hover:bg-gray-50">
-              <td className="px-4 py-3 font-medium text-gray-800">{r.spaceName}</td>
-              <td className="px-4 py-3 text-gray-600">{r.deskLabel}</td>
-              <td className="px-4 py-3 text-gray-600">
+            <tr key={r.id} style={{ borderBottom: "1px solid #E8DCC8" }} 
+              onMouseEnter={(e) => e.currentTarget.style.background = "#F5F1ED"} 
+              onMouseLeave={(e) => e.currentTarget.style.background = "transparent"}>
+              <td style={{ padding: "0.75rem 1rem", fontWeight: 500, color: "#213547" }}>{r.spaceName}</td>
+              <td style={{ padding: "0.75rem 1rem", color: "#666" }}>{r.deskLabel}</td>
+              <td style={{ padding: "0.75rem 1rem", color: "#666" }}>
                 {new Date(r.startDate).toLocaleString("fr-FR")}
               </td>
-              <td className="px-4 py-3 text-gray-600">
+              <td style={{ padding: "0.75rem 1rem", color: "#666" }}>
                 {new Date(r.endDate).toLocaleString("fr-FR")}
               </td>
-              <td className="px-4 py-3">
-                <span className={`px-2 py-1 rounded-full text-xs font-medium ${
-                  r.status === "ACTIVE"
-                    ? "bg-green-100 text-green-600"
-                    : "bg-red-100 text-red-600"
-                }`}>
+              <td style={{ padding: "0.75rem 1rem" }}>
+                <span style={{
+                  padding: "0.25rem 0.65rem",
+                  borderRadius: "9999px",
+                  fontSize: "0.75rem",
+                  fontWeight: 500,
+                  display: "inline-block",
+                  background: r.status === "ACTIVE" ? "#E8DCC8" : "#E8D7C3",
+                  color: r.status === "ACTIVE" ? "#5A4A3A" : "#6B5344"
+                }}>
                   {r.status === "ACTIVE" ? "Active" : "Annulée"}
                 </span>
               </td>
-              <td className="px-4 py-3">
+              <td style={{ padding: "0.75rem 1rem" }}>
                 {r.status === "ACTIVE" && (
                   <button
                     onClick={() => handleCancel(r.id)}
-                    className="bg-red-500 hover:bg-red-600 text-white text-xs px-3 py-1 rounded-lg transition"
+                    style={{
+                      background: "#D4A574",
+                      color: "white",
+                      fontSize: "0.75rem",
+                      padding: "0.35rem 0.75rem",
+                      borderRadius: "8px",
+                      border: "none",
+                      cursor: "pointer",
+                      fontWeight: 500,
+                      transition: "background 0.2s"
+                    }}
+                    onMouseEnter={(e) => e.target.style.background = "#C9A877"}
+                    onMouseLeave={(e) => e.target.style.background = "#D4A574"}
                   >
                     Annuler
                   </button>
