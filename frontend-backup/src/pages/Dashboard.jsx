@@ -4,6 +4,7 @@ import SpaceCard from "../components/SpaceCard";
 import SearchBar from "../components/SearchBar";
 import Loader from "../components/Loader";
 import { useNavigate } from "react-router-dom";
+import bgImage from "../assets/téléchargement.jpg";
 
 function Dashboard() {
   const [spaces, setSpaces] = useState([]);
@@ -49,7 +50,7 @@ function Dashboard() {
           minHeight: "60vh",
           gap: "15px",
           padding: "40px 30px",
-          backgroundImage: "url('/assets/téléchargement.jpg')",
+          backgroundImage: "url(${bgImage})",
           backgroundSize: "cover",
           backgroundPosition: "center",
           borderRadius: "0",
