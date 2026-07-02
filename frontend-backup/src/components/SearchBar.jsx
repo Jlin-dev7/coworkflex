@@ -7,7 +7,7 @@ function SearchBar({ city, setCity, capacity, setCapacity, onSearch }) {
         value={city}
         onChange={(e) => setCity(e.target.value)}
         style={{
-          border: "1px solid #e5e7eb",
+          border: "1px solid #E8DCC8",
           borderRadius: "8px",
           padding: "0.6rem 1rem",
           fontSize: "0.95rem",
@@ -22,7 +22,7 @@ function SearchBar({ city, setCity, capacity, setCapacity, onSearch }) {
         value={capacity}
         onChange={(e) => setCapacity(e.target.value)}
         style={{
-          border: "1px solid #e5e7eb",
+          border: "1px solid #E8DCC8",
           borderRadius: "8px",
           padding: "0.6rem 1rem",
           fontSize: "0.95rem",
@@ -34,7 +34,7 @@ function SearchBar({ city, setCity, capacity, setCapacity, onSearch }) {
       <button
         onClick={onSearch}
         style={{
-          background: "linear-gradient(135deg, #646cff, #a855f7)",
+          background: "linear-gradient(135deg, #C9A877, #8B7355)",
           color: "white",
           border: "none",
           padding: "0.6rem 1.4rem",
