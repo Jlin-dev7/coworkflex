@@ -53,7 +53,7 @@ function ReservationModal({ desk, spaceId, onClose, onSuccess }) {
         width: "100%",
         maxWidth: "450px",
         boxShadow: "0 20px 60px rgba(0,0,0,0.15)",
-        border: "1px solid #ebebef"
+        border: "1px solid #E8DCC8"
       }}>
         <h2 style={{ margin: "0 0 4px 0", fontSize: "1.4rem", color: "#213547" }}>
           Réserver un poste
@@ -64,9 +64,9 @@ function ReservationModal({ desk, spaceId, onClose, onSuccess }) {
 
         {error && (
           <div style={{
-            background: "#fff0f0",
-            border: "1px solid #fca5a5",
-            color: "#dc2626",
+            background: "#E8D7C3",
+            border: "1px solid #D4A574",
+            color: "#6B5344",
             padding: "10px 14px",
             borderRadius: "8px",
             marginBottom: "1rem",
@@ -86,7 +86,7 @@ function ReservationModal({ desk, spaceId, onClose, onSuccess }) {
             onChange={(e) => setStartDate(e.target.value)}
             style={{
               width: "100%",
-              border: "1px solid #ebebef",
+              border: "1px solid #E8DCC8",
               borderRadius: "8px",
               padding: "0.6rem 1rem",
               fontSize: "0.95rem",
@@ -108,7 +108,7 @@ function ReservationModal({ desk, spaceId, onClose, onSuccess }) {
             onChange={(e) => setEndDate(e.target.value)}
             style={{
               width: "100%",
-              border: "1px solid #ebebef",
+              border: "1px solid #E8DCC8",
               borderRadius: "8px",
               padding: "0.6rem 1rem",
               fontSize: "0.95rem",
@@ -126,12 +126,12 @@ function ReservationModal({ desk, spaceId, onClose, onSuccess }) {
             style={{
               flex: 1,
               padding: "0.6rem 1rem",
-              border: "1px solid #ebebef",
+              border: "1px solid #E8DCC8",
               borderRadius: "8px",
-              background: "#fafafa",
+              background: "#E8DCC8",
               cursor: "pointer",
               fontWeight: 500,
-              color: "#444"
+              color: "#5A4A3A"
             }}
           >
             Annuler
@@ -144,7 +144,7 @@ function ReservationModal({ desk, spaceId, onClose, onSuccess }) {
               padding: "0.6rem 1rem",
               border: "none",
               borderRadius: "8px",
-              background: "linear-gradient(135deg, #646cff, #a855f7)",
+              background: "linear-gradient(135deg, #C9A877, #8B7355)",
               color: "white",
               cursor: loading ? "not-allowed" : "pointer",
               fontWeight: 600,
