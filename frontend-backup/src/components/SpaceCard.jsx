@@ -15,11 +15,11 @@ function SpaceCard({ space, isLast }) {
         flexWrap: "wrap",
         gap: "1rem",
         alignItems: "flex-start",
-        borderBottom: isLast ? "none" : "1px solid #e5e7eb",
-        background: "white",
+        borderBottom: isLast ? "none" : "1px solid #E8DCC8",
+        background: "#FAFAF8",
       }}
-      onMouseEnter={(e) => e.currentTarget.style.background = "#f8fafc"}
-      onMouseLeave={(e) => e.currentTarget.style.background = "white"}
+      onMouseEnter={(e) => e.currentTarget.style.background = "#F0E6D8"}
+      onMouseLeave={(e) => e.currentTarget.style.background = "#FAFAF8"}
     >
       <img
         src={space.imageUrl}
@@ -31,8 +31,8 @@ function SpaceCard({ space, isLast }) {
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: "1rem", flexWrap: "wrap" }}>
           <h2 style={{ fontSize: "1.2rem", fontWeight: "700", color: "#213547", margin: 0 }}>{space.name}</h2>
           <span style={{
-            background: "rgba(100,108,255,0.1)",
-            color: "#646cff",
+            background: "rgba(201,168,119,0.1)",
+            color: "#8B7355",
             padding: "0.35rem 0.85rem",
             borderRadius: "999px",
             fontSize: "0.85rem",
@@ -48,8 +48,8 @@ function SpaceCard({ space, isLast }) {
           style={{
             alignSelf: "flex-start",
             background: "transparent",
-            color: "#646cff",
-            border: "1px solid #646cff",
+            color: "#8B7355",
+            border: "1px solid #8B7355",
             padding: "0.55rem 1rem",
             borderRadius: "8px",
             cursor: "pointer",
