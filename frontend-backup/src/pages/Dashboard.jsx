@@ -49,7 +49,7 @@ function Dashboard() {
           minHeight: "60vh",
           gap: "15px",
           padding: "40px 30px",
-          backgroundImage: "url('/src/assets/téléchargement.jpg')",
+          backgroundImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           borderRadius: "0",
