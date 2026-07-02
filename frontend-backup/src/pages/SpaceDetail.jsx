@@ -44,34 +44,34 @@ function SpaceDetail() {
   };
 
   return (
-    <div style={{ background: "#fcfcfd", minHeight: "100vh" }}>
+    <div style={{ background: "#F5F1ED", minHeight: "100vh" }}>
       <div style={{
         maxWidth: "1200px",
         margin: "0 auto",
-        background: "#fff",
-        borderLeft: "1px solid #ebebef",
-        borderRight: "1px solid #ebebef",
+        background: "#FAFAF8",
+        borderLeft: "1px solid #E8DCC8",
+        borderRight: "1px solid #E8DCC8",
         minHeight: "100vh",
       }}>
 
         {/* HEADER */}
         <div style={{
           padding: "20px 30px",
-          borderBottom: "1px solid #ebebef",
+          borderBottom: "1px solid #E8DCC8",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center"
         }}>
-          <h1 style={{ margin: 0, fontSize: "1.5rem", color: "#646cff" }}>CoWork-Flex</h1>
+          <h1 style={{ margin: 0, fontSize: "1.5rem", color: "#8B7355" }}>CoWork-Flex</h1>
           <button
             onClick={() => navigate("/")}
             style={{
               background: "transparent",
-              border: "1px solid #ebebef",
+              border: "1px solid #E8DCC8",
               borderRadius: "8px",
               padding: "8px 16px",
               cursor: "pointer",
-              color: "#646cff",
+              color: "#8B7355",
               fontWeight: 500
             }}
           >
@@ -80,10 +80,10 @@ function SpaceDetail() {
         </div>
 
         {/* TITRE */}
-        <div style={{ padding: "40px 30px 20px 30px", borderBottom: "1px solid #ebebef" }}>
+        <div style={{ padding: "40px 30px 20px 30px", borderBottom: "1px solid #E8DCC8" }}>
           <div style={{
             width: 50, height: 50,
-            background: "#F4F0FF",
+            background: "#F0E6D8",
             borderRadius: 12,
             display: "flex",
             alignItems: "center",
@@ -99,9 +99,9 @@ function SpaceDetail() {
           {successMsg && (
             <div style={{
               marginTop: "16px",
-              background: "#f0fff4",
-              border: "1px solid #86efac",
-              color: "#16a34a",
+              background: "#E8DCC8",
+              border: "1px solid #C9A877",
+              color: "#5A4A3A",
               padding: "12px 16px",
               borderRadius: "8px",
               fontWeight: 500
@@ -125,16 +125,16 @@ function SpaceDetail() {
                 <div
                   key={desk.id}
                   style={{
-                    border: "1px solid #ebebef",
+                    border: "1px solid #E8DCC8",
                     borderRadius: "12px",
                     padding: "24px",
                     display: "flex",
                     flexDirection: "column",
                     gap: "12px",
-                    background: "#fff",
+                    background: "#FAFAF8",
                     transition: "box-shadow 0.2s"
                   }}
-                  onMouseEnter={(e) => e.currentTarget.style.boxShadow = "0 4px 20px rgba(100,108,255,0.1)"}
+                  onMouseEnter={(e) => e.currentTarget.style.boxShadow = "0 4px 20px rgba(201,168,119,0.2)"}
                   onMouseLeave={(e) => e.currentTarget.style.boxShadow = "none"}
                 >
                   <h3 style={{ margin: 0, fontSize: "1.1rem" }}>{desk.label}</h3>
@@ -145,9 +145,9 @@ function SpaceDetail() {
                     borderRadius: "20px",
                     fontSize: "0.8rem",
                     fontWeight: 600,
-                    background: desk.available ? "#f0fff4" : "#fff0f0",
-                    color: desk.available ? "#16a34a" : "#dc2626",
-                    border: `1px solid ${desk.available ? "#86efac" : "#fca5a5"}`,
+                    background: desk.available ? "#E8DCC8" : "#E8D7C3",
+                    color: desk.available ? "#5A4A3A" : "#6B5344",
+                    border: `1px solid ${desk.available ? "#C9A877" : "#D4A574"}`,
                     width: "fit-content"
                   }}>
                     {desk.available ? "✅ Disponible" : "❌ Indisponible"}
@@ -158,9 +158,9 @@ function SpaceDetail() {
                     style={{
                       marginTop: "auto",
                       padding: "10px 18px",
-                      border: "1px solid #ddd",
+                      border: "1px solid #D4C4B0",
                       borderRadius: "12px",
-                      background: desk.available ? "linear-gradient(135deg, #646cff, #a855f7)" : "#f5f5f5",
+                      background: desk.available ? "linear-gradient(135deg, #C9A877, #8B7355)" : "#E8DCC8",
                       color: desk.available ? "white" : "#999",
                       cursor: desk.available ? "pointer" : "not-allowed",
                       fontWeight: 500,
