@@ -1,7 +1,20 @@
 function Loader() {
   return (
-    <div className="flex justify-center items-center h-40">
-      <div className="animate-spin rounded-full h-12 w-12 border-4 border-blue-500 border-t-transparent"></div>
+    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "160px" }}>
+      <div style={{
+        animation: "spin 1s linear infinite",
+        borderRadius: "50%",
+        height: "48px",
+        width: "48px",
+        border: "4px solid #E8DCC8",
+        borderTop: "4px solid #8B7355"
+      }}></div>
+      <style>{`
+        @keyframes spin {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+      `}</style>
     </div>
   );
 }
